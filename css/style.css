@@ -1,0 +1,242 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+body nav {
+  width: 100vw;
+  height: 100px;
+  background-color: #223344;
+  position: fixed;
+  z-index: 5;
+}
+@media (max-width: 375px) {
+  body nav {
+    height: 80px;
+  }
+}
+body nav #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav #title img.nav-logo {
+  width: 64px;
+  height: 64px;
+  filter: brightness(100);
+  margin: 0 10px;
+}
+@media (max-width: 375px) {
+  body nav #title img.nav-logo {
+    width: 45px;
+    height: 45px;
+    filter: brightness(100);
+  }
+}
+body nav #title .nav-name {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 100px;
+  margin: 0 10px;
+}
+@media (max-width: 375px) {
+  body nav #title .nav-name {
+    font-size: 1.2rem;
+    line-height: 80px;
+  }
+}
+body header .back-to-top {
+  display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+  position: fixed; /* 位置是固定的 */
+  bottom: 40px;
+  right: 40px;
+  z-index: 99; /* 確保不被其他功能覆蓋 */
+  border: 2px solid #473aaa;
+  outline: none; /* 不顯示外框 */
+  background-color: #fff;
+  color: #473aaa;
+  cursor: pointer;
+  padding: 20px 25px 25px 25px;
+  border-radius: 15px;
+}
+body header .back-to-top:hover {
+  background-color: rgb(190, 190, 190); /* 滑鼠移上去時，反轉顏色 */
+  color: #fff;
+}
+body header section.pageOne {
+  background: #ffffe0;
+  width: 100vw;
+  height: 100px;
+}
+@media (max-width: 375px) {
+  body header section.pageOne {
+    height: 80px;
+  }
+}
+body header section.pageOne p.pageOneText {
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (max-width: 375px) {
+  body header section.pageOne p.pageOneText {
+    font-size: 1.2rem;
+    line-height: 80px;
+  }
+}
+body section.question {
+  width: 100%;
+  background-color: #dddddd;
+}
+body section.question .text {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+}
+@media (max-width: 1280px) {
+  body section.question .text {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  body section.question .text {
+    width: 95%;
+    padding-top: 20px;
+  }
+}
+body section.question .text h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+}
+@media (max-width: 375px) {
+  body section.question .text h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+}
+body section.question .text p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  letter-spacing: 0.2em;
+  line-height: 40px;
+  font-weight: 420;
+  text-indent: 2.8rem;
+}
+@media (max-width: 375px) {
+  body section.question .text p {
+    font-size: 1rem;
+  }
+}
+body section.question .text ul {
+  margin-top: 20px;
+  list-style-type: square;
+}
+body section.question .text ul li {
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  line-height: 40px;
+  font-weight: 420;
+}
+@media (max-width: 375px) {
+  body section.question .text ul li {
+    font-size: 1rem;
+  }
+}
+body section.question .text ul li a {
+  color: rgb(140, 65, 65);
+  text-decoration: none;
+  cursor: pointer;
+}
+body section.question .text ul li a:hover {
+  font-size: 1.35rem;
+  color: rgb(234, 109, 109);
+  border-radius: 5px;
+  text-decoration: underline;
+}
+@media (max-width: 375px) {
+  body section.question .text ul li a:hover {
+    font-size: 1.2rem;
+  }
+}
+body section.question .text table {
+  width: 1000px;
+  margin-top: 40px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgb(37, 94, 135);
+}
+@media (max-width: 1024px) {
+  body section.question .text table {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  body section.question .text table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+body section.question .text table thead tr th {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #a8b8ff;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 375px) {
+  body section.question .text table thead tr th {
+    font-size: 1.3rem;
+  }
+}
+body section.question .text table thead tr th:hover {
+  opacity: 0.8;
+  background-color: #a8b8ff;
+  color: #fff;
+}
+body section.question .text table tbody tr td {
+  position: relative;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-color: rgb(186, 186, 247);
+}
+@media (max-width: 375px) {
+  body section.question .text table tbody tr td {
+    font-size: 1rem;
+  }
+}
+body section.question .text table tbody tr td:hover {
+  opacity: 0.8;
+  background-color: #465495;
+  color: white;
+}
+
+footer {
+  width: 100vw;
+  height: 60px;
+  background-color: #223344;
+}
+footer p {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 0.2em;
+}/*# sourceMappingURL=style.css.map */
